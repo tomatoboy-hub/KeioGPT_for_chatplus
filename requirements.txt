@@ -4,6 +4,5 @@ langchain
 tiktoken
 flask
 line-bot-sdk
-keiojp
-PyPDF2
+PyPDF
 shutil
