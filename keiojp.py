@@ -14,7 +14,7 @@ import tiktoken
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # keiojp.py
-
+chat_history = []
 def process_message(message):
     # メッセージを処理し、返信するテキストを生成します
     query = message
@@ -23,7 +23,7 @@ def process_message(message):
 
 
 # PDFファイルをロードする
-loader = PyPDFLoader("data/submit.pdf")
+loader = PyPDFLoader("data/main/submit.pdf")
 
 # PDFからページを抽出し、指定したchunk_sizeでテキストを分割する
 pages = (loader.load_and_split(text_splitter=RecursiveCharacterTextSplitter(

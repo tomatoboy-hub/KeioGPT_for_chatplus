@@ -10,5 +10,5 @@ merger = pypdf.PdfMerger()
 for pdf_file in pdf_files:
   merger.append(pdf_file)
 
-merger.write("data/submit.pdf")
+merger.write("data/main/submit.pdf")
 merger.close()
